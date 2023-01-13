@@ -1,7 +1,16 @@
-# LOOPS
-fruits = ["Apple","Peach","Pear"]
-
-for fruit in fruits:
-    print(fruit)
-    print(fruit + " Pie")
-print(fruits)
+# # # # LOOPS
+# # # fruits = ["Apple","Peach","Pear"]
+# # #
+# # # for fruit in fruits:
+# # #     print(fruit)
+# # #     print(fruit + " Pie")
+# # # print(fruits)
+# #
+# # # range() function
+# # for number in range(1,11,3):
+# #     print(number)
+#
+# total = 0
+# for number in range(1,101):
+#     total +=  number
+# print(total)
