@@ -27,19 +27,19 @@ if check == check_eazy[0]:
     # Eazy Level - Order not randomised:
     # e.g. 4 letter, 2 symbol, 2 number = JduE&!91
     for letter in range(0,nr_letters):
-        random_letter = random.choice(letters)
-        chars.append(random_letter)
+        random_letter = str(random.choice(letters))
         password += str(random_letter)
+        chars.append(random_letter)
 
     for symbol in range(0,nr_symbols):
         random_symbol = random.choice(symbols)
-        chars.append(random_symbol)
         password += str(random_symbol)
+        chars.append(random_symbol)
 
     for number in range(0,nr_numbers):
         random_number = random.choice(numbers)
-        chars.append(random_number)
         password += str(random_number)
+        chars.append(random_number)
 else:
     # Hard Level - Order of characters randomised:
     # e.g. 4 letter, 2 symbol, 2 number = g^2jk8&P
