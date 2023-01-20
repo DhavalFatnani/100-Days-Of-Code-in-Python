@@ -21,10 +21,10 @@ from time import sleep
 def clear():
     os.system('cls' if os.name == 'nt' else 'clear')
 
-def evaluate():
+def find_winner(all_bidders):
     winner = ''
     highest_bid = 0
-    for bidder in bidders:
+    for bidder in all_bidders:
         bid_amount = bidder['bid']
         if bid_amount > highest_bid:
             highest_bid = bid_amount
@@ -32,8 +32,8 @@ def evaluate():
     print(f'The winner is {winner} with a bid of Rs.{highest_bid}')
 
 while True:
-    Name = input("What is your name? ")
-    bid = int(input("What is your bid? "))
+    Name = input("What is your name?: ")
+    bid = int(input("What is your bid?: Rs. "))
     _bidder = {
         "name": Name,
         "bid": bid
@@ -47,7 +47,7 @@ while True:
     elif more_bidder == "no":
         sleep(2)
         clear()
-        evaluate()
+        find_winner(bidders)
         break
     else:
         print("Invalid input")
