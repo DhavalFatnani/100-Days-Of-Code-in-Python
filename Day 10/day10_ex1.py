@@ -34,6 +34,14 @@ def is_leap(_year):
 
 
 def days_in_month(_year,_month):
+    """
+    :param _year: any year
+    :type _year: int
+    :param _month: any month
+    :type _month: int
+    :return: the number of days in the month in @param _month
+    :rtype: int
+    """
     if _month > 12 or _month < 1:
         return "Invalid month"
     month_days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
