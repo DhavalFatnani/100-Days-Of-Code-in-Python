@@ -3,7 +3,7 @@
 total_bill = input("What was the total bill? rs.")
 total_bill = float(total_bill)
 tip_percent = int(input("What percentage tip would you like to give? 10, 12 or 15? "))
-tip_percent = float(tip_percent/100)
+tip_percent = float(tip_percent / 100)
 split = input("How many people to split the bill?")
 split = int(split)
 tip = total_bill * tip_percent

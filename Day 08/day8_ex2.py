@@ -33,11 +33,12 @@ Make sure you name your function/parameters the same as when it's called on the 
 Use the same wording as the Example Outputs to make sure the tests pass.
 """
 
+
 # Write your code below this line 👇
 def prime_checker(number):
     is_prime = True
-    for i in range(2,number):
-        if number%i == 0:
+    for i in range(2, number):
+        if number % i == 0:
             is_prime = False
             break
 

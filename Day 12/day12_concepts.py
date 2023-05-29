@@ -1,4 +1,4 @@
-###################### SCOPE ######################
+# SCOPE ######################
 
 # friends = 1
 #
@@ -13,21 +13,26 @@
 LOCAL SCOPE
 """
 
+
 def drink_soda():
     soda_level = "drinking"
     print(f"soda level: {soda_level}")
 
+
 drink_soda()
-#print(f"soda level: {soda_level}")
+# print(f"soda level: {soda_level}")
 
 
 """
 GLOBAL SCOPE
 """
 soda_status = "not drinking"
+
+
 def drink_soda():
     soda_level = "drinking"
-    print(f"soda level: {soda_status}")
+    print(f"soda level: {soda_level}")
+
 
 drink_soda()
 print(f"soda level: {soda_status}")
@@ -40,20 +45,23 @@ If I declare a variable inside a loop or a conditional statement, In python, it 
 """
 
 game_level = 3
+new_enemy = ""
 
 enemies = ["Skeleton", "Zombie", "Goblin"]
 for _ in range(len(enemies)):
     if game_level < 5:
         new_enemy = enemies[0]
 
-print(new_enemy)
-
+print(f"A new enemy has appeared: {new_enemy}")
 # MODIFYING GLOBAL SCOPE VARIABLES
 
 enemy = 1
+
+
 def increase_enemies():
     print(f"enemies inside function: {enemy}")
     return enemy + 1
+
 
 enemies = increase_enemies()
 print(f"enemies outside function: {enemies}")

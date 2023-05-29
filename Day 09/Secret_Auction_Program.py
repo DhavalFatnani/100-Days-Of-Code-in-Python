@@ -1,9 +1,14 @@
 """
 Secret Auction Program
 """
+
+import os
+
+# from time import sleep
+
 logo = '''
                          ___________
-                         \         /
+                         \\         /
                           )_______(
                           |"""""""|_.-._,.---------.,_.-._
                           |       | | |               | | ''-.
@@ -16,10 +21,11 @@ logo = '''
 '''
 print(logo)
 bidders = []
-import os
-from time import sleep
-def clear():
-    os.system('cls' if os.name == 'nt' else 'clear')
+
+
+def clr():
+    return os.system('cls')
+
 
 def find_winner(all_bidders):
     winner = ''
@@ -31,6 +37,7 @@ def find_winner(all_bidders):
             winner = bidder['name']
     print(f'The winner is {winner} with a bid of Rs.{highest_bid}')
 
+
 while True:
     Name = input("What is your name?: ")
     bid = int(input("What is your bid?: Rs. "))
@@ -41,12 +48,10 @@ while True:
     more_bidder = input("Are there any other bidders? Type 'yes' or 'no' ")
     bidders.append(_bidder)
     if more_bidder == "yes":
-        sleep(2)
-        clear()
+        clr()
         continue
     elif more_bidder == "no":
-        sleep(2)
-        clear()
+        clr()
         find_winner(bidders)
         break
     else:

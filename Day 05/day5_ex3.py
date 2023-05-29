@@ -10,6 +10,6 @@ There are quite a few ways of solving this problem, but you will need to use the
 """
 
 even_total = 0
-for number in range(2,101,2):
+for number in range(2, 101, 2):
     even_total += number
 print(even_total)

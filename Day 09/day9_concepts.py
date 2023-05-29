@@ -5,10 +5,10 @@ programming_dictionary = {
     "Function": "A piece of code that you can easily call over and over again.",
 }
 
-#Retrieving items from dictionary.
+# Retrieving items from dictionary.
 print(programming_dictionary["Function"])
 
-#Adding new items to dictionary.
+# Adding new items to dictionary.
 programming_dictionary["Loop"] = "The action of doing something over and over again."
 print(programming_dictionary)
 
@@ -30,8 +30,7 @@ capitals = {
     "Germany": "Berlin"
 }
 
-#Nesting a List in a Dictionary
-
+# Nesting a List in a Dictionary
 travel_log = {
     "France": ["Paris", "Lille", "Dijon"],
     "Germany": ["Berlin", "Hamburg", "Stuttgart"]
@@ -48,17 +47,16 @@ travel = {
     }
 }
 
-#Nesting Dictionary in a list
-
+# Nesting Dictionary in a list
 travel_list = [
     {
         "country": "France",
         "cities_visited": ["Paris", "Lille", "Dijon"],
-        "total_visits":12
+        "total_visits": 12
     },
     {
         "country": "Germany",
         "cities_visited": ["Berlin", "Hamburg", "Stuttgart"],
-        "total_visits":5
+        "total_visits": 5
     }
 ]

@@ -33,7 +33,7 @@ def is_leap(_year):
         return False
 
 
-def days_in_month(_year,_month):
+def days_in_month(_year, _month):
     """
     :param _year: any year
     :type _year: int
@@ -47,7 +47,7 @@ def days_in_month(_year,_month):
     month_days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
     if is_leap(_year):
         month_days[1] = 29
-    day = month_days[_month-1]
+    day = month_days[_month - 1]
     return day
 
 
@@ -56,10 +56,3 @@ year = int(input("Enter a year: "))
 month = int(input("Enter a month: "))
 days = days_in_month(year, month)
 print(days)
-
-
-
-
-
-
-

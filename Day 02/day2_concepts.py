@@ -2,10 +2,10 @@
 
 # String
 print("Hello"[0])
-print("123"+"456")
+print("123" + "456")
 
 # Integer
-print(123+456)
+print(123 + 456)
 var = 123_456_789
 
 # Float
@@ -44,12 +44,11 @@ PEMDASLR
 + -
 '''
 print(3 * 3 + 3 / 3 - 3)
-print(3 *(3 + 3) / 3 - 3)
-
+print(3 * (3 + 3) / 3 - 3)
 
 """ ROUND OFF in python """
-print(round(8/3,2))
-print(8//3)
+print(round(8 / 3, 2))
+print(8 // 3)
 
 """ SHORT HAND OPERATORS """
 score = 0

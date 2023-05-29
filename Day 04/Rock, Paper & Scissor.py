@@ -30,16 +30,16 @@ scissors = '''
 moves = [rock, paper, scissors]
 computer_choice = random.choice(moves)
 while True:
-    choice = int(input("What do you choose> Type 0 for Rock, 1 for Paper or 2 for Scissors."))
-    if choice == 0 or choice == 1 or choice == 2:
-        chose = moves[choice]
-        print(f"Your Choice:\n{chose}")
+    your_choice = int(input("What do you choose> Type 0 for Rock, 1 for Paper or 2 for Scissors."))
+    if your_choice == 0 or your_choice == 1 or your_choice == 2:
+        you_chose = moves[your_choice]
+        print(f"Your Choice:\n{you_chose}")
         print(f"Computer chose:\n{computer_choice}\n")
 
-        if (chose == rock and computer_choice == scissors) or (chose == scissors and computer_choice == paper) or (
-                chose == paper and computer_choice == rock):
+        if (you_chose == rock and computer_choice == scissors) or (you_chose == scissors and computer_choice == paper) or (
+                you_chose == paper and computer_choice == rock):
             print("You won")
-        elif chose == computer_choice:
+        elif you_chose == computer_choice:
             print("TIED")
         else:
             print("You lose")

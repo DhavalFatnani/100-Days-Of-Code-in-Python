@@ -1,6 +1,7 @@
 # HANGMAN GAME
 import random
-#Step 1
+
+# Step 1
 
 word_list = ["aardvark", "baboon", "camel"]
 

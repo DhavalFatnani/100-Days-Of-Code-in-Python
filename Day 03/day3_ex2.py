@@ -29,8 +29,8 @@ height = float(input("enter your height in m: "))
 weight = float(input("enter your weight in kg: "))
 # 🚨 Don't change the code above 👆
 
-#Write your code below this line 👇
-BMI = round(weight /(height ** 2))
+# Write your code below this line 👇
+BMI = round(weight / (height ** 2))
 
 if BMI < 18.5:
     state = "underweight"

@@ -1,4 +1,8 @@
-alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+from caesar_art import logo
+
+alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u',
+            'v', 'w', 'x', 'y', 'z']
+
 
 def caesar(start_text, shift_amount, direction_of_conversion):
     end_text = ""
@@ -15,17 +19,17 @@ def caesar(start_text, shift_amount, direction_of_conversion):
             end_text += char
     print(f"The {direction_of_conversion}d text is {end_text}")
 
-from caesar_art import logo
+
 print(logo)
 
 restart = True
 while restart:
-        direction = input("Type 'encode' to encrypt, type 'decode' to decrypt: ")
-        text = input("Type your message: ").lower()
-        shift = int(input("Type the shift number: "))
-        shift %= 26
-        caesar(start_text=text, shift_amount=shift, direction_of_conversion=direction)
-        restart = input("Type 'yes' if you want to go again. Otherwise type 'no'.")
-        if restart == 'no':
-            print("GoodBye")
-            restart = False
+    direction = input("Type 'encode' to encrypt, type 'decode' to decrypt: ")
+    text = input("Type your message: ").lower()
+    shift = int(input("Type the shift number: "))
+    shift %= 26
+    caesar(start_text=text, shift_amount=shift, direction_of_conversion=direction)
+    restart = input("Type 'yes' if you want to go again. Otherwise type 'no'.")
+    if restart == 'no':
+        print("GoodBye")
+        restart = False

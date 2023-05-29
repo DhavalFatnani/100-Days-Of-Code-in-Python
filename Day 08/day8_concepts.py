@@ -22,15 +22,16 @@
 # name - is a parameter
 # "Dhaval" - is an argument
 
-#Function with multiple parameters
+# Function with multiple parameters
 def greet_with(name, location):
     print(f"Hello {name}")
     print(f"How is it like in {location}?")
 
+
 # positional arguments
-greet_with("Dhaval","Vadodara")
-greet_with("Dev","Ahmedabad")
+greet_with("Dhaval", "Vadodara")
+greet_with("Dev", "Ahmedabad")
 
 # keyword arguments
-greet_with(name="Meet",location="Mumbai")
-greet_with(location="Mumbai",name="Ishan")
+greet_with(name="Meet", location="Mumbai")
+greet_with(location="Mumbai", name="Ishan")

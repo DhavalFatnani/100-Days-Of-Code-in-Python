@@ -30,7 +30,7 @@ add_pepperoni = input("Do you want pepperoni? Y or N ")
 extra_cheese = input("Do you want extra cheese? Y or N ")
 # 🚨 Don't change the code above 👆
 
-#Write your code below this line 👇
+# Write your code below this line 👇
 size = size.lower()
 add_pepperoni = add_pepperoni.lower()
 extra_cheese = extra_cheese.lower()

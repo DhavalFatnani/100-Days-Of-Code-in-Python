@@ -1,3 +1,5 @@
+from random import randint
+
 logo = """
  ▄▄▄▄▄▄▄▄▄▄▄  ▄         ▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄       ▄▄▄▄▄▄▄▄▄▄▄  ▄         ▄  ▄▄▄▄▄▄▄▄▄▄▄       ▄▄        ▄  ▄         ▄  ▄▄       ▄▄  ▄▄▄▄▄▄▄▄▄▄   ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄ 
 ▐░░░░░░░░░░░▌▐░▌       ▐░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌     ▐░░░░░░░░░░░▌▐░▌       ▐░▌▐░░░░░░░░░░░▌     ▐░░▌      ▐░▌▐░▌       ▐░▌▐░░▌     ▐░░▌▐░░░░░░░░░░▌ ▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌
@@ -15,6 +17,7 @@ logo = """
 EASY_LEVEL_ATTEMPTS = 10
 HARD_LEVEL_ATTEMPTS = 5
 
+
 # FUNCTION TO CHECK IF THE GUESS IS LESS THAN OR GREATER THAN THE RANDOM NUMBER
 def check_guess(_guess, _secret_number):
     if _guess > _secret_number:
@@ -26,6 +29,7 @@ def check_guess(_guess, _secret_number):
         exit()
         # print("You took " + str(_attempts) + " attempts.")
 
+
 # MAKE FUNCTION TO SET DIFFICULTY
 def set_difficulty():
     level = input("Choose a difficulty. Type 'easy' or 'hard': ")
@@ -34,7 +38,7 @@ def set_difficulty():
     elif level == 'hard':
         return HARD_LEVEL_ATTEMPTS
 
-from random import randint
+
 def game():
     # CHOOSE A RANDOM NUMBER BETWEEN 1 AND 100.
     print(logo)
@@ -52,7 +56,7 @@ def game():
     print("Sorry, you've run out of guesses. The number was " + str(secret_number) + ".")
     # TRACK THE NUMBER OF TURNS AND REDUCE BY 1 IF THEY GET IT WRONG
 
-
     # REPEAT THE GUESSING FUNCTION IF THEY GET IT WRONG
+
 
 game()
