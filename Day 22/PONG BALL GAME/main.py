@@ -20,24 +20,27 @@ def pause_game():
     paused = not paused
 
 
+def split():
+    splitter.pensize(5)
+    splitter.color("white")
+    splitter.hideturtle()
+    splitter.penup()
+    splitter.goto(0, 300)
+    splitter.seth(270)
+
+    for _ in range(10):
+        splitter.pendown()
+        splitter.forward(30)
+        splitter.penup()
+        splitter.forward(30)
+
+
 splitter = Turtle()
-paused = False
 l_paddle = Paddle((-350, 0))
 r_paddle = Paddle((350, 0))
 ball = Ball()
 score = ScoreBoard()
-splitter.pensize(5)
-splitter.color("white")
-splitter.hideturtle()
-splitter.penup()
-splitter.goto(0, 300)
-splitter.seth(270)
-
-for _ in range(10):
-    splitter.pendown()
-    splitter.forward(30)
-    splitter.penup()
-    splitter.forward(30)
+split()
 
 screen.listen()
 screen.onkeypress(l_paddle.up, "w")
