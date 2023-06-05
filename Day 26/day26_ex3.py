@@ -36,7 +36,6 @@ with open("file2.txt") as f2:
 
 result = [int(number) for number in file1 if number in file2]
 
-
 # Write your code above 👆
 
 print(result)

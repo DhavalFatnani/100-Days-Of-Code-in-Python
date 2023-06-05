@@ -52,6 +52,20 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\Day 26\India States Game\India States-UTs.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Day 26\India States Game\Indian_States.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
       </map>
     </option>
   </component>
